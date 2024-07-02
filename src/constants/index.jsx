@@ -14,7 +14,7 @@ const K = {
         },
         {
             name: "Manage",
-            path: "/eventManagement"
+            path: "/manage"
         },
         {
             name: "Sign In",
