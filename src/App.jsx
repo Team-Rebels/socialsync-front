@@ -1,9 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import RootLayout from "./layouts/rootLayout"
-import Hero from "./pages/home/components/hero";
 import Home from "./pages/home";
-import Upcoming from "./pages/home/components/upcoming";
-import Occasions from "./pages/home/components/occasions";
+import UpcomingEvents from "./pages/upcomingEvents";
+import EventListing from "./pages/explore";
+import EventCreation from "./pages/eventCreation";
+import EventManagement from "./pages/eventManagement";
+import SignIn from "./pages/signin";
+import SignUp from "./pages/signOut";
 
 function App() {
   const router = createBrowserRouter ([
@@ -15,17 +18,37 @@ function App() {
             index:true,
             element: <Home />,
           },
-          {
-            path: "hero",
-            element: <Hero/>
-          },
-          {
-            path: "occasions",
-            element: <Occasions/>
-          },
+          // {
+          //   path: "hero",
+          //   element: <Hero/>
+          // },
+          // {
+          //   path: "occasions",
+          //   element: <Occasions/>
+          // },
           {
             path: "upcoming",
-            element: <Upcoming/>
+            element: <UpcomingEvents/>
+          },
+          {
+            path: "explore",
+            element: <EventListing/>
+          },
+          {
+            path: "createEvent",
+            element: <EventCreation/>
+          },
+          {
+            path: "manage",
+            element: <EventManagement/>
+          },
+          {
+            path: "signin",
+            element: <SignIn/>
+          },
+          {
+            path: "signup",
+            element: <SignUp/>
           },
       ]
     }

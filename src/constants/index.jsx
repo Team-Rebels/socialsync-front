@@ -1,26 +1,28 @@
-import { Drama, Film, Luggage, Mic } from "lucide-react";
-
 const K = {
     NAVLINKS: [
         {
             name: "Explore",
-            path: "/events"
+            path: "/explore"
         },
         {
             name: "Upcoming Events",
-            path: "/find-events"
+            path: "/upcoming"
         },
         {
             name: "Create Events",
-            path: "/create-events"
+            path: "/createEvent"
+        },
+        {
+            name: "Manage",
+            path: "/eventManagement"
         },
         {
             name: "Sign In",
-            path: "/sign-in"
+            path: "/signIn"
         },
         {
             name: "Sign Up",
-            path: "/sign-up"
+            path: "/signUp"
         },
     ],
 }   

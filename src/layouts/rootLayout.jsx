@@ -4,9 +4,11 @@ import Footer from '../components/footer'
 
 const RootLayout = () => {
   return <>
-  <Navbar/>
-  <Outlet/>
-  <Footer/>
+    <Navbar />
+    <div className='my-[80px]'>
+      <Outlet />
+    </div>
+    <Footer />
 
   </>;
 }
