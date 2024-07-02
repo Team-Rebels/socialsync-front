@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import RootLayout from "./layouts/rootLayout"
 import Home from "./pages/home";
-import UpcomingEvents from "./pages/upcomingEvents";
+import UpcomingEvents from "../src/pages/upcomingEvents";
 import EventListing from "./pages/explore";
 import EventCreation from "./pages/eventCreation";
 import EventManagement from "./pages/eventManagement";
