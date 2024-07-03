@@ -1,6 +1,6 @@
 const Upcoming = () => {
   return (
-    <div>Upcoming</div>
+    <div className="h-[50vh]">Upcoming</div>
   )
 }
 

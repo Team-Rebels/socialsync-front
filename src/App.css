@@ -1,6 +1,18 @@
-@font-face {
+@layer base {
+  @font-face {
     font-family:'Lexend';
     src: url('./assets/fonts/Lexend.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-}   
+  }
+}
+
+@layer base {
+    @font-face {
+      font-family: 'eone';
+      font-style: normal;
+      font-weight: 200;
+      font-display: swap;
+      src: url(./assets/fonts/Eone.ttf) format('eone');
+    }
+  }

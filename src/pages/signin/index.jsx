@@ -1,6 +1,9 @@
 const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <div>
+      <input type="text" />
+      <form action="">Name</form>
+    </div>
   )
 }
 
