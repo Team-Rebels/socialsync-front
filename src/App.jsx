@@ -1,7 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import RootLayout from "./layouts/rootLayout"
 import Home from "./pages/home";
-import UpcomingEvents from "./pages/upcomingEvents";
 import EventListing from "./pages/explore";
 import EventCreation from "./pages/eventCreation";
 import EventManagement from "./pages/eventManagement";
@@ -26,10 +25,6 @@ function App() {
           //   path: "occasions",
           //   element: <Occasions/>
           // },
-          {
-            path: "upcoming",
-            element: <UpcomingEvents/>
-          },
           {
             path: "explore",
             element: <EventListing/>

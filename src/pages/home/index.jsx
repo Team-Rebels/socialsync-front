@@ -9,7 +9,7 @@ const Home = () => {
         <Hero />
         <EventType />
         <Occasions />
-        <Upcoming />
+        <Upcoming/>
     </div>
   )
 }

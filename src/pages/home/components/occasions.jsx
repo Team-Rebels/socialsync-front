@@ -3,22 +3,50 @@ import { ballerina, comedy, comedy1, play, tour1 } from '../../../assets/images'
 
 const Occasions = () => {
   return (
-    <div className='h-[80vh] bg-[#FAFAFB] flex flex-row place-content-center gap-[90px] mt-[20px] font-[lexend]'>
-        <div className='size-[100px]'>
+    <div className='h-[80vh] bg-[#F8F7FA] flex flex-row place-content-center gap-[30px] mt-[20px] font-serif pt-[60px]'>
+        <div className='size-[280px] '>
         <img src={play} alt="play" />
-        <p className='cursor-pointer'>Play at the National theatre</p>
+        <div className='w-[280px] h-[180px] bg-white pl-[10px] text-[18px]'>
+        <p className='cursor-pointer font-[lexend]'>The Samuria</p>
+        <div className='flex flex-row justify-end top-0 mt-[-20px]'>icon</div>
+        <p>Calender</p>
+        <p className='font-thin'>Accra</p>
+        <p>GHc300</p>
+        <p className='pt-[35px]'>Hosted by Winston Academy</p>
         </div>
-        <div className='size-[100px]'>
+        </div>
+        <div className='size-[280px]'>
         <img src={tour1} alt="" />
-        <p className='cursor-pointer'>Kumasi</p>
+        <div className='w-[280px] h-[180px] bg-white pl-[10px] text-[18px]'>
+        <p className='cursor-pointer'>City Of Love</p>
+        <p>Calender</p>
+        <p className='font-thin'>Accra</p>
+        <p>GHc300</p>
+        <p className='pt-[40px]'>Hosted by TroopTribe Tour</p>
         </div>
-        <div className='size-[100px]'>
+        <div>icon</div>
+        </div>
+        <div className='size-[280px]'>
         <img src={ballerina} alt="" />
-        <p className='cursor-pointer'>Boadua</p>
+        <div className='w-[280px] h-[180px] bg-white pl-[10px] text-[18px]'>
+        <p className='cursor-pointer'>Dancing Queens</p>
+        <p>Calender</p>
+        <p>Lagos</p>
+        <p>GHc400</p>
+        <p className='pt-[40px]'>Hosted by Dance Ghana </p>
         </div>
-        <div className='size-[100px]'>
+        <div>icon</div>
+        </div>
+        <div className='size-[280px]'>
         <img src={comedy1} alt="" />
-        <p className='cursor-pointer'>Akwatia</p>
+        <div className='w-[280px] h-[180px] bg-white pl-[10px] text-[18px]'>
+        <p className='cursor-pointer'>Laugh Out</p>
+        <p>Calender</p>
+        <p>Kumasi</p>
+        <p>GHc1,000</p>
+        <p className='pt-[40px]'>Hosted by Comedy Central</p>
+        </div>
+        <div>icon</div>
         </div>
     </div>
   )

@@ -5,10 +5,6 @@ const K = {
             path: "/explore"
         },
         {
-            name: "Upcoming Events",
-            path: "/upcoming"
-        },
-        {
             name: "Create Events",
             path: "/createEvent"
         },

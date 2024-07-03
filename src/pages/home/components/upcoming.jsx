@@ -1,6 +1,8 @@
+import React from 'react'
+
 const Upcoming = () => {
   return (
-    <div className="h-[50vh]">Upcoming</div>
+    <div>Upcoming</div>
   )
 }
 
