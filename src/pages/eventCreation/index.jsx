@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import EventTile from '../../components/eventTile';
 import bannerImage from '../../assets/images/banner.jpg';
+import axios from 'axios';
 
 const EventCreation = () => {
+  
+
+
   const [eventDetails, setEventDetails] = useState({
     title: 'New Event',
     date: '',
     location: '',
     price: ' ' ,
     host: '',
-    image: ''
+   image: ''
   });
 
   const handleInputChange = (e) => {
