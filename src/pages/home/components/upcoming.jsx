@@ -11,10 +11,10 @@ const Upcoming = () => {
             </select>
         </div>
         <div className='flex flex-row justify-center'>
-            <div className='w-[750px] w-1/2'>
+            <div className=' w-1/2'>
                 <img src={tour3} alt="" />
             </div>
-            <div className='w-[750px] w-1/2 bg-[#6AA2EF]'>
+            <div className=' w-1/2 bg-[#6AA2EF]'>
                 <p>Hello</p>
                 <p>Hi</p>
             </div>
