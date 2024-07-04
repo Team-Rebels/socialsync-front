@@ -3,7 +3,7 @@ import { comedy, movie, music, pageant, theatre, tour } from '../../../assets/im
 
 const EventType = () => {
   return (
-    <div className='flex flex-row h-[25vh] place-content-center gap-[70px] mt-[20px] font-[lexend]'>
+    <div className='flex flex-row h-[25vh] place-content-center gap-[50px] mt-[20px] font-[lexend]'>
         <div className='border-[1px] border-[#00AEB0] rounded-full size-[150px] flex justify-center pt-[20px] hover:bg-[#00AEB0]'>
         <div className='size-[80px]'>
         <img src={comedy} alt="Comedy" />
