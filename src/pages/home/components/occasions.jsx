@@ -3,10 +3,31 @@ import { ballerina, comedy1, play, tour1 } from '../../../assets/images'
 
 const Occasions = () => {
   return (
-    <div className='h-[100vh] bg-[#F8F7FA] flex flex-col justify-center mt-[20px] font-serif'>
-      <div className='mt-[-180px] mb-[50px] text-start pl-[60px] font-[lexend] text-[30px]'>
-        <h1>New Events Around the World</h1>
-      </div>
+    <div className="h-[100vh] bg-[#F8F7FA] flex flex-col justify-center mt-[20px] font-serif">
+  <div className="flex justify-between items-center pl-[60px] pr-[60px] mt-[-180px] mb-[50px]">
+    <h1 className="font-[lexend] text-[30px]">New Events Around the World</h1>
+    <div className="flex gap-[20px]">
+      <select className="p-2 rounded-lg">
+        <option value="Select Date" disabled selected hidden>Select Date</option>
+        <option value="date1">Date 1</option>
+        <option value="date2">Date 2</option>
+        <option value="date3">Date 3</option>
+      </select>
+      <select className="p-2 rounded-lg">
+        <option value="Select Location" disabled selected hidden>Select Location</option>
+        <option value="location1">Location 1</option>
+        <option value="location2">Location 2</option>
+        <option value="location3">Location 3</option>
+      </select>
+      <select className="p-2 rounded-lg">
+        <option value="Select Category" disabled selected hidden>Select Category</option>
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+        <option value="category3">Category 3</option>
+      </select>
+      <button className="bg-[#ea0a52] text-white p-2 rounded-lg">Filter</button>
+    </div>
+  </div>
       <div className='flex flex-row pl-[60px] gap-[50px]'>
         <div className='relative size-[250px] group'>
           <img src={play} alt="play" className='transition-transform duration-500 ease-in-out transform group-hover:scale-105' />

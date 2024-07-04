@@ -69,3 +69,9 @@ import comedy1 from '../images/comedy.jpg'
 export {
     comedy1
 };
+
+import tour3 from '../images/tour3.jpg'
+
+export {
+    tour3
+};
