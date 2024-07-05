@@ -1,4 +1,6 @@
 import React from 'react';
+import cityImage from '../../assets/images/tour.jpg'
+import dancingImage from '../../assets/images/ballerina.jpg'
 
 const Dashboard = () => {
   // Sample data for demonstration
@@ -28,8 +30,11 @@ const Dashboard = () => {
     host: 'Dance Nigeria',
   };
 
-  return (
+  return (  
+  
     <div className="dashboard p-10">
+      <h1 className="text-center font-semibold text-5xl pb-10">Dashboard</h1>
+    
       <div className="grid grid-cols-2 gap-10">
         <div className="summary-tile bg-blue-500 text-white p-5 rounded">
           <h2 className="text-xl font-bold">Events Created</h2>
@@ -54,7 +59,7 @@ const Dashboard = () => {
       <div className="event-display mt-10">
         <div className="event bg-gray-100 p-5 rounded mb-5">
           <h2 className="text-xl font-bold">{event1.name}</h2>
-          <img src={event1.photo} alt={event1.name} className="my-5" />
+          <img src={cityImage} alt={event1.name} className="my-5 w-2/5"  />
           <p><strong>Date:</strong> {event1.date}</p>
           <p><strong>Location:</strong> {event1.location}</p>
           <p><strong>Price:</strong> {event1.price}</p>
@@ -68,7 +73,7 @@ const Dashboard = () => {
 
         <div className="event bg-gray-100 p-5 rounded">
           <h2 className="text-xl font-bold">{event2.name}</h2>
-          <img src={event2.photo} alt={event2.name} className="my-5" />
+          <img src={dancingImage} alt={event2.name} className="my-5 w-2/5" />
           <p><strong>Date:</strong> {event2.date}</p>
           <p><strong>Location:</strong> {event2.location}</p>
           <p><strong>Price:</strong> {event2.price}</p>

@@ -18,8 +18,6 @@ const EventCreation = () => {
   }
 
 
-
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
@@ -30,11 +28,13 @@ const EventCreation = () => {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-
+        const preview = document.getElementById('image-preview');
+        preview.src = reader.result;
       };
       reader.readAsDataURL(file);
     }
   };
+
 
   return ( 
   <form onSubmit={postEvent}>
@@ -44,8 +44,9 @@ const EventCreation = () => {
 
       <div className="border rounded-lg p-6 mb-6">
         <h4 className="text-xl font-semibold mb-4">Upload Cover</h4>
+        <img id="image-preview" src='' alt="Event cover" className="mb-4 rounded w-3/4" />
 
-        <img src='' alt="Event cover" className="mb-4 rounded" />
+    
        
 
           <input
@@ -66,7 +67,7 @@ const EventCreation = () => {
           <input
           type="text"
           id="name"
-          name="title"
+          name="name"
 
             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm"
           />
@@ -121,6 +122,18 @@ const EventCreation = () => {
           type="date"
 
             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm"
+
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Price</label>
+          <input
+           id="price"
+           name="price"
+           type="text"
+
+
+            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm"
           />
         </div>
 
@@ -154,17 +167,7 @@ const EventCreation = () => {
           />
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Price</label>
-          <input
-           id="price"
-           name="price"
-           type="text"
-
-
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm"
-          />
-        </div>
+       
 
       </div>
 
@@ -174,8 +177,6 @@ const EventCreation = () => {
         <button type="submit" className="bg-blue-700 text-white py-2 px-4 shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Add</button>
       </div>
 
-      <h4 className="text-xl font-semibold mb-4 mt-8">Event Preview</h4>
-      <EventTile />
     </div>
   </form >
   

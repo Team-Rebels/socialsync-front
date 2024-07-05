@@ -40,8 +40,6 @@ useEffect(() => {
 
 
 
-
-
   /*const events = [
     { title: 'Concert', date: '2024-07-01', location: 'New York', price: '$50', host: 'Music Fest', image: concertImage },
     { title: 'The Samurai', date: '2024-07-05', location: 'Accra', price: 'GHc 300', host: 'Winston Academy', image: playImage },
@@ -57,7 +55,7 @@ useEffect(() => {
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 p-8">
       <h1 className="text-center font-semibold text-3xl pb-8">Explore Events</h1>
-      <input type="text" placeholder="Search.." className="mb-8 p-2 border border-pink-300 rounded" />
+      <inpu ttype="text" placeholder="Search.." className="mb-8 p-2 border border-pink-300 rounded" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-5xl">
         {events.map((event, index) => (
           <EventTile 
