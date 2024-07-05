@@ -23,7 +23,7 @@ const Dashboard = () => {
     date: '05-08-2024',
     location: 'lagos',
     price: 'GHc500',
-    photo: './assets/images/ballerina.jpg',
+    photo: 'url',
     description: 'A wonderful dance experience',
     host: 'Dance Nigeria',
   };
