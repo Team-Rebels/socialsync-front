@@ -75,3 +75,9 @@ import tour3 from '../images/tour3.jpg'
 export {
     tour3
 };
+
+import musicEvent from '../images/MusicEvent.jpg'
+
+export {
+    musicEvent
+};

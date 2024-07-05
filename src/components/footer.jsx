@@ -6,44 +6,66 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/fre
 const Footer = () => {
   return (
     <footer>
-        <div className='flex flex-row justify-between bg-[#470E37] h-[15vh] pt-[25px]'>
-          <div>
-            <img className='w-[250px] pl-[50px]' src={logo} alt="Logo" />
-          </div>
-          <div>
-          <ul className='flex flex-row pr-[30px] gap-[50px] text-white text-[20px]'>
-            <a className='no-underline hover:underline' href=''>Comedy</a>
-            <a className='no-underline hover:underline' href=''>Movies</a>
-            <a className='no-underline hover:underline' href=''>Music</a>
-            <a className='no-underline hover:underline' href=''>Theatre</a>
-            <a className='no-underline hover:underline' href=''>Pageant</a>
-            <a className='no-underline hover:underline' href=''>Tour</a>
-          </ul>
-          </div>
+  <div>
+    <div className='bg-[#00224D] h-[240px] text-white flex flex-row justify-around pt-[40px] font-[lexend]'>
+      <div>
+        <img className='w-[180px] pl-[30px]' src={logo} alt="Logo" />
+      </div>
+      <div>
+        <h1 className='text-[22px] underline'>Categories</h1>
+        <ul className='mt-[10px] font-[eone] flex flex-col'>
+          <a href=''>Comedy</a>
+          <a href=''>Movies</a>
+          <a href=''>Music</a>
+          <a href=''>Theatre</a>
+          <a href=''>Pageant</a>
+          <a href=''>Tour</a>
+        </ul>
+      </div>
+      <div>
+        <h1 className='text-[22px] underline'>Resources</h1>
+        <ul className='mt-[10px] font-[eone]'>
+          <li>User Guide</li>
+          <li>Event Creation Video</li>
+        </ul>
+      </div>
+      <div>
+        <h1 className='text-[22px] underline'>Company</h1>
+        <ul className='mt-[10px] font-[eone]'>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+        <div className='pt-[40px] '>
+          <p className='pb-[5px]'>Subscribe to Newsletter</p>
+          <input className='text-black' type="text" />
+          <button className='pl-[5px] font-[eone] text-[#EB0B52]'>Submit</button>
         </div>
-        <div className='h-[15vh] flex flex-row justify-between pt-[25px]'>
-          <ul className='flex flex-row pl-[50px] gap-[5px] font-sans font-normal'>
-            <li>©2024.</li>
-            <li>SOCIALSYNC.</li>
-            <li>ALL RIGHTS RESERVED.</li>
-            <li>PRIVACY POLICY.</li>
-            <li>POWERED BY TEAM REBELS</li>
-          </ul>
-          <div className='flex flex-row gap-[30px] pr-[30px]'>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} size="lg" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </a>
-          </div>
-        </div>
+      </div>
+    </div>
+    <div className='h-[15vh] bg-[#001d3d] text-white flex flex-row justify-between items-center px-[50px] font-[lexend]'>
+      <ul className='flex flex-row gap-[5px] font-normal font-[eone]'>
+        <li>©2024.</li>
+        <li>SOCIALSYNC.</li>
+        <li>ALL RIGHTS RESERVED.</li>
+        <li>PRIVACY POLICY.</li>
+        <li>POWERED BY TEAM REBELS</li>
+      </ul>
+      <div className='flex flex-row gap-[20px]'>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebook} size="lg" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTwitter} size="lg" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} size="lg" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} size="lg" />
+        </a>
+      </div>
+    </div>
+  </div>
     </footer>
   )
 }
