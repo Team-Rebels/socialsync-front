@@ -1,34 +1,42 @@
-
-
 import signUpImage from '../../assets/images/artpaint.jpg';
+import google from '../../assets/images/Google_Icons.webp';
 
 const SignUp = () => {
   return (
-    <div>
-       <div className="flex h-screen ">
-      <div className="w-1/2 bg-lightBlue place-content-center " >
-
-        <div className="mx-auto w-fit flex flex-col items-start gap-y-4 ">
-          <div className="flex flex-col text-5xl">
-            <span className="font-thin ">Best Design of </span>
-            <span className="font-bold ">Furniture Collections</span>
-
-          </div>
-          <p className="w-70">
-            A small river named Duden flows by their place <br /> and supplies it with the necessary regelialia.
-          </p>
-          <button className="bg-white px-6 py-2 rounded-full drop-shadow-lg uppercase text-cyan-900">Discover</button>
+    <div className="flex h-screen">
+      <div className="w-1/2 flex items-center justify-center bg-lightBlue">
+        <div className="w-full max-w-sm space-y-4 p-8">
+          <h1 className="text-4xl font-semibold">Create Account</h1>
+          <form className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Email address</label>
+              <input
+                type="email"
+                placeholder="Email address"
+                className="mt-1 block w-full border border-gray-300 rounded-md p-3"
+              />
+            </div>
+            <button className="w-full bg-[#A5045B] text-white py-2 px-4 rounded shadow-sm hover:bg-[#D00855]">
+              Sign Up
+            </button>
+            <div className="flex items-center my-4">
+              <hr className="w-full border-gray-300" />
+              <span className="mx-2 text-gray-500">or</span>
+              <hr className="w-full border-gray-300" />
+            </div>
+            <button className="w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded shadow-sm hover:bg-gray-50 flex items-center justify-center">
+              <img src={google} alt="Google logo" className="w-5 h-5 mr-2" />
+              Sign in with Google
+            </button>
+          </form>
         </div>
       </div>
-
-      <div className="w-1/2 " >
+      <div className="w-1/2">
         <img src={signUpImage} alt="sign up and in background" className="object-cover w-full h-full" />
       </div>
-
     </div>
+  );
+};
 
-    </div>
-  )
-}
+export default SignUp;
 
-export default SignUp
