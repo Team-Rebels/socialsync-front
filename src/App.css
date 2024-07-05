@@ -16,3 +16,25 @@
       src: url(./assets/fonts/Eone.ttf) format('eone');
     }
   }
+
+  
+@layer base {
+  @font-face {
+    .ultra-regular {
+      font-family: "Ultra", serif;
+      font-weight: 400;
+      font-style: normal;
+    src: url(./assets/fonts/Ultra-Regular.ttf) format('ultra');
+
+    @layer base {
+      @font-face {
+        .nunito-<uniquifier> {
+          font-family: "Nunito", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+        }
+        src: url(./assets/fonts/Nunito-VariableFont_wght.ttf) format('nunito');
+      }
+    }
+  
