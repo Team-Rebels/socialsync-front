@@ -60,6 +60,10 @@ const Dashboard = () => {
           <p><strong>Price:</strong> {event1.price}</p>
           <p><strong>Description:</strong> {event1.description}</p>
           <p><strong>Hosted by:</strong> {event1.host}</p>
+          <div className='flex flex-row gap-[10px] mt-[30px] size-[15px]'>
+            <button className='text-emerald-500'>Edit</button>
+            <button className='text-red-600'>Delete</button>
+          </div>
         </div>
 
         <div className="event bg-gray-100 p-5 rounded">
@@ -70,6 +74,10 @@ const Dashboard = () => {
           <p><strong>Price:</strong> {event2.price}</p>
           <p><strong>Description:</strong> {event2.description}</p>
           <p><strong>Hosted by:</strong> {event2.host}</p>
+          <div className='flex flex-row gap-[10px] mt-[30px] size-[15px]'>
+            <button className='text-emerald-500'>Edit</button>
+            <button className='text-red-600'>Delete</button>
+          </div>
         </div>
       </div>
     </div>
